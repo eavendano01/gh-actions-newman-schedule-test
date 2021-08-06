@@ -1,16 +1,17 @@
-name: Schedule Newman API Tests Workflow
+name: Shell Commands 
 
 on: 
   schedule:
-    - cron: '0/2 * * * *'
+    - cron: '* * * * *'
 
-jobs: 
-  run-api-tests:
+jobs:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps: 
-      - name: echo test mesage
-        run: echo "Starting workflow"
-      - name: check node version
+      - name: echo a string
+        run: echo "Hello World"
+      - name: multiline script 
         run: |
-          node -v
-          npm -v
+           node -v 
+           npm -v
+   
