@@ -1,6 +1,8 @@
 name: Schedule Newman API Tests Workflow
 
-on: [push]
+on: 
+  schedule:
+    - cron: "0/15 * * * *"
 
 jobs: 
   run-api-tests:
