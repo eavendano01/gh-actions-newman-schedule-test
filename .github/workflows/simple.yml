@@ -1,9 +1,9 @@
 name: Schedule Newman API Tests Workflow
 
-on: 
+on:
   schedule:
-    - cron: '0/5 * * * *'
-
+    # Runs "at minute 55 past every hour" (see https://crontab.guru)
+    - cron: '5 * * * *'
 jobs: 
   run-api-tests:
     runs-on: ubuntu-latest
