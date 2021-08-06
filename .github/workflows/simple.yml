@@ -2,7 +2,7 @@ name: Schedule Newman API Tests Workflow
 
 on: 
   schedule:
-    - cron: "0/15 * * * *"
+    - cron: "0/5 * * * *"
 
 jobs: 
   run-api-tests:
